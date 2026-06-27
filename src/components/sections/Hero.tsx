@@ -1,9 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { ArrowRight, Zap } from "lucide-react";
 
-const fadeUp = {
+const fadeUp: Variants = {
     hidden: { opacity: 0, y: 24 },
     visible: (delay: number) => ({
         opacity: 1,
@@ -12,7 +12,7 @@ const fadeUp = {
     }),
 };
 
-const fadeRight = {
+const fadeRight: Variants = {
     hidden: { opacity: 0, x: 40 },
     visible: {
         opacity: 1,
@@ -26,8 +26,8 @@ export function Hero() {
         <section className="relative min-h-screen bg-[#11358B] overflow-hidden flex items-center px-6 md:px-16 lg:px-24 pt-24 pb-16">
             {/* Ambient background glow */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] rounded-full bg-[#6192FC]/10 blur-[120px]" />
-                <div className="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-[#0A0F1E]/60 blur-[80px]" />
+                <div className="absolute top-1/4 left-1/3 w-125 h-125 rounded-full bg-[#6192FC]/10 blur-[120px]" />
+                <div className="absolute bottom-0 right-0 w-100 h-100 rounded-full bg-[#0A0F1E]/60 blur-[80px]" />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto relative z-10">
@@ -52,8 +52,8 @@ export function Hero() {
                         variants={fadeUp}
                         className="font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-[#EFF0F4] max-w-xl"
                     >
-                        Building the Infrastructure for a{" "}
-                        <span className="text-[#C7EF66]">Cleaner</span> Grid.
+                        Renewable Energy{" "}
+                        <span className="text-[#C7EF66]">Innovate & </span> Suntain.
                     </motion.h1>
 
                     {/* Subtitle */}
@@ -102,9 +102,9 @@ export function Hero() {
                         className="mt-14 pt-8 border-t border-[#EFF0F4]/10 flex flex-row gap-12"
                     >
                         {[
-                            { value: "3+", label: "Projects" },
-                            { value: "2024", label: "Graduate" },
-                            { value: "5+", label: "Tools" },
+                            { value: "9+", label: "Projects" },
+                            { value: "5+", label: "Social Impact" },
+                            { value: "4 years", label: "Experience" },
                         ].map((stat) => (
                             <div key={stat.label} className="flex flex-col">
                                 <span className="text-2xl font-bold text-[#EFF0F4]">

@@ -1,41 +1,21 @@
-import { Hero } from "@/components/sections/Hero";
 import { Navbar } from "@/components/ui/Navbar";
-
-interface PlaceholderSectionProps {
-  id: string;
-}
-
-const placeholderSections: PlaceholderSectionProps[] = [
-  { id: "about" },
-  { id: "skills" },
-  { id: "projects" },
-  { id: "experience" },
-  { id: "contact" },
-];
-
-function PlaceholderSection({ id }: PlaceholderSectionProps) {
-  return (
-    <section
-      id={id}
-      className="section-padding flex min-h-screen items-center justify-center bg-[#0A0F1E]"
-    >
-      <p className="text-center text-lg font-medium text-[#EFF0F4]/60">
-        Coming soon
-      </p>
-    </section>
-  );
-}
+import { Hero } from "@/components/sections/Hero";
+import { About } from "@/components/sections/About";
+import { Projects } from "@/components/sections/Projects";
+import { Certificates } from "@/components/sections/Certificates";
+import { Experience } from "@/components/sections/Experience";
+import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        {placeholderSections.map((section) => (
-          <PlaceholderSection key={section.id} id={section.id} />
-        ))}
-      </main>
-    </>
-  );
+    return (
+        <main>
+            <Navbar />
+            <Hero />
+            <About />
+            <Projects />
+            <Certificates />
+            <Experience />
+            <Contact />
+        </main>
+    );
 }
