@@ -21,9 +21,9 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fahro Sinurarif — Renewable Energy Engineer",
+  title: "FahrosiNurArif — Renewable Energy Engineer",
   description:
-    "Personal portfolio of Fahro Sinurarif, a Renewable Energy Engineering graduate focused on solar systems and energy modeling.",
+    "Personal portfolio of Fahrosi Nur Arif, a Renewable Energy Engineering graduate focused on solar systems and energy modeling.",
 };
 
 interface RootLayoutProps {
