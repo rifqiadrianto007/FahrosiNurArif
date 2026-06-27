@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #11358B;
+  --color-accent: #C7EF66;
+  --color-mid: #6192FC;
+  --color-surface: #EFF0F4;
+  --color-dark: #0A0F1E;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A0F1E;
+  color: #EFF0F4;
+  font-family: var(--font-body);
+}
+
+.accent-text {
+  color: #C7EF66;
+}
+
+.section-padding {
+  padding: 5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 7rem 2rem;
+  }
+}
