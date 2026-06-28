@@ -19,7 +19,7 @@ export const projects: Project[] = [
     description:
       "Designed and developed a microcontroller-based data logger to automate real-time voltage monitoring of an HHO generator.",
     tools: ["C/C++", "Arduino IDE", "Arduino Uno", "Voltage Sensor Module", "SD Card Module"],
-    thumbnail: "/images/project-1.jpg"
+    thumbnail: "/images/project.webp"
   },
   {
     id: "2",
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     description:
       "Developed a GIS-based biogas potential map to identify high-priority regions for renewable energy development in West Sumatra.",
     tools: ["QGIS 3.14", "Geographic Information System (GIS)"],
-    thumbnail: "/images/project-2.jpg"
+    thumbnail: "/images/project.webp"
   },
   {
     id: "3",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description:
       "Developed an Arduino-based automatic temperature monitoring and control system capable of measuring, displaying, and regulating temperature in real time.",
     tools: ["Arduino IDE", "DS18B20 Temperature Sensor", "Omron MY2N Relay", "C/C++"],
-    thumbnail: "/images/project-3.jpg"
+    thumbnail: "/images/project.webp"
   },
   {
     id: "4",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     description:
       "Designed a conceptual building integrated with rooftop photovoltaic (PV) systems to demonstrate the application of renewable energy in modern building design.",
     tools: ["AutoCAD", "Technical Drawing", "Photovoltaic (PV) System Concept"],
-    thumbnail: "/images/project-4.jpg"
+    thumbnail: "/images/project.webp"
   },
   {
     id: "5",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     description:
       "Designed and implemented a small-scale biogas installation to convert cattle manure from the Politeknik Negeri Jember livestock farm into renewable cooking fuel.",
     tools: ["Biogas Digester", "Renewable Energy System", "Waste-to-Energy Technology"],
-    thumbnail: "/images/project-5.jpg"
+    thumbnail: "/images/project.webp"
   },
   {
     id: "6",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     description:
       "Developed biomass briquettes from coffee husk waste to transform agricultural by-products into a renewable and marketable solid fuel.",
     tools: ["Biomass Processing Equipment", "Compression Machine"],
-    thumbnail: "/images/project-6.jpg"
+    thumbnail: "/images/project.webp"
   },
   {
     id: "7",
@@ -73,6 +73,6 @@ export const projects: Project[] = [
     description:
       "Designed and developed a digital avometer capable of measuring voltage and current using Arduino Uno, INA219, and voltage sensors.",
     tools: ["Arduino IDE", "C/C++", "Eletrical Circuit Design"],
-    thumbnail: "/images/project-7.jpg"
+    thumbnail: "/images/project.webp"
   }
 ];

@@ -16,7 +16,7 @@ export const certificates: Certificate[] = [
     issuer: "Placeholder Institution",
     date: "Jan 2024",
     credentialUrl: "#",
-    thumbnail: "/images/cert-1.jpg",
+    thumbnail: "/images/certificate.webp",
   },
   {
     id: "2",
@@ -24,7 +24,7 @@ export const certificates: Certificate[] = [
     issuer: "Placeholder Institution",
     date: "Mar 2024",
     credentialUrl: "#",
-    thumbnail: "/images/cert-2.jpg",
+    thumbnail: "/images/certificate.webp",
   },
   {
     id: "3",
@@ -32,7 +32,7 @@ export const certificates: Certificate[] = [
     issuer: "Placeholder Institution",
     date: "May 2024",
     credentialUrl: "#",
-    thumbnail: "/images/cert-3.jpg",
+    thumbnail: "/images/certificate.webp",
   },
   {
     id: "4",
@@ -40,7 +40,7 @@ export const certificates: Certificate[] = [
     issuer: "Placeholder Institution",
     date: "Jul 2024",
     credentialUrl: "#",
-    thumbnail: "/images/cert-4.jpg",
+    thumbnail: "/images/certificate.webp",
   },
   {
     id: "5",
@@ -48,7 +48,7 @@ export const certificates: Certificate[] = [
     issuer: "Placeholder Institution",
     date: "Aug 2024",
     credentialUrl: "#",
-    thumbnail: "/images/cert-5.jpg",
+    thumbnail: "/images/certificate.webp",
   },
   {
     id: "6",
@@ -56,7 +56,7 @@ export const certificates: Certificate[] = [
     issuer: "Placeholder Institution",
     date: "Oct 2024",
     credentialUrl: "#",
-    thumbnail: "/images/cert-6.jpg",
+    thumbnail: "/images/certificate.webp",
   },
   {
     id: "7",
@@ -64,7 +64,7 @@ export const certificates: Certificate[] = [
     issuer: "Placeholder Institution",
     date: "Nov 2024",
     credentialUrl: "#",
-    thumbnail: "/images/cert-7.jpg",
+    thumbnail: "/images/certificate.webp",
   },
   {
     id: "8",
@@ -72,6 +72,6 @@ export const certificates: Certificate[] = [
     issuer: "Placeholder Institution",
     date: "Dec 2024",
     credentialUrl: "#",
-    thumbnail: "/images/cert-8.jpg",
+    thumbnail: "public/images/certificate.webp",
   },
 ];
