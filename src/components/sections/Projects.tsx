@@ -10,10 +10,9 @@ type FilterCategory = "All" | Project["category"];
 const categories: FilterCategory[] = [
     "All",
     "Solar",
-    "Biogas",
+    "Bioenergy",
     "Instrumentation",
-    "Mapping",
-    "Other",
+    "Other"
 ];
 
 const fadeUp: Variants = {
@@ -141,42 +140,6 @@ export function Projects() {
                                             {tool}
                                         </span>
                                     ))}
-                                </div>
-
-                                <div className="flex gap-3 mt-auto">
-                                    {project.github && (
-                                        <a
-                                            href={project.github}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-1.5 text-xs text-[#EFF0F4]/50 hover:text-[#C7EF66] transition"
-                                        >
-                                            <GitBranch size={13} />
-                                            GitHub
-                                        </a>
-                                    )}
-                                    {project.report && (
-                                        <a
-                                            href={project.report}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-1.5 text-xs text-[#EFF0F4]/50 hover:text-[#C7EF66] transition"
-                                        >
-                                            <FileText size={13} />
-                                            Report
-                                        </a>
-                                    )}
-                                    {project.demo && (
-                                        <a
-                                            href={project.demo}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-1.5 text-xs text-[#EFF0F4]/50 hover:text-[#C7EF66] transition"
-                                        >
-                                            <ExternalLink size={13} />
-                                            Demo
-                                        </a>
-                                    )}
                                 </div>
                             </div>
                         </motion.div>
