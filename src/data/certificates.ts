@@ -72,6 +72,6 @@ export const certificates: Certificate[] = [
     issuer: "Placeholder Institution",
     date: "Dec 2024",
     credentialUrl: "#",
-    thumbnail: "public/images/certificate.webp",
+    thumbnail: "/images/certificate.webp",
   },
 ];

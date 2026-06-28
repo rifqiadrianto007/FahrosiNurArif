@@ -3,6 +3,7 @@
 import { motion, type Variants } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { certificates } from "@/data/certificates";
+import Image from "next/image";
 
 const fadeUp: Variants = {
     hidden: { opacity: 0, y: 30 },
@@ -70,12 +71,14 @@ export function Certificates() {
                             className="group relative rounded-2xl border border-[#EFF0F4]/10 bg-[#0A0F1E]/40 overflow-hidden hover:border-[#C7EF66]/30 transition"
                         >
                             {/* Thumbnail area */}
-                            <div className="w-full h-32 bg-[#0A0F1E]/60 flex items-center justify-center border-b border-[#EFF0F4]/10">
-                                <div className="w-12 h-12 rounded-full bg-[#C7EF66]/10 border border-[#C7EF66]/20 flex items-center justify-center">
-                                    <span className="text-[#C7EF66] text-lg font-bold font-mono">
-                                        {cert.id}
-                                    </span>
-                                </div>
+                            <div className="relative w-full aspect-video bg-[#0A0F1E]/60 overflow-hidden border-b border-[#EFF0F4]/10">
+                                <Image
+                                    src={cert.thumbnail}
+                                    alt={cert.title}
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition duration-500"
+                                    sizes="(max-width: 768px) 50vw, 25vw"
+                                />
                             </div>
 
                             {/* Content */}
