@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
-import { GitBranch, FileText, ExternalLink } from "lucide-react";
 import { projects, type Project } from "@/data/projects";
 
 type FilterCategory = "All" | Project["category"];
