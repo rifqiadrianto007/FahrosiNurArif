@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { Mail, Phone, MapPin, Link, GitBranch } from "lucide-react";
+import { Mail, Phone, MapPin, Link } from "lucide-react";
 
 const contactInfo = [
     {
