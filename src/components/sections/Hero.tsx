@@ -41,7 +41,7 @@ export function Hero() {
                         variants={fadeUp}
                         className="inline-flex w-fit px-3 py-1 rounded-full border border-[#6192FC]/40 text-[#6192FC] text-xs font-mono tracking-widest mb-6"
                     >
-                        RENEWABLE ENERGY ENGINEER
+                        FAHROSI NUR ARIF
                     </motion.span>
 
                     {/* Headline */}
@@ -50,10 +50,10 @@ export function Hero() {
                         initial="hidden"
                         animate="visible"
                         variants={fadeUp}
-                        className="font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-[#EFF0F4] max-w-xl"
+                        className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-[#EFF0F4] max-w-xl"
                     >
-                        Renewable Energy{" "}
-                        <span className="text-[#C7EF66]">Innovate & </span> Suntain.
+                        Building <span className="text-[#C7EF66]">Sustainable </span>
+                        <span className="text-[#C7EF66]">Energy</span> Solutions.
                     </motion.h1>
 
                     {/* Subtitle */}
@@ -64,8 +64,9 @@ export function Hero() {
                         variants={fadeUp}
                         className="mt-6 mb-10 text-[#EFF0F4]/60 text-lg max-w-md leading-relaxed"
                     >
-                        Renewable Energy Engineer — focused on solar systems, energy
-                        modeling, and sustainable power solutions.
+                        Renewable Energy Engineer — focused on solar systems,
+                        energy modeling, and sustainable power solutions.
+
                     </motion.p>
 
                     {/* CTA Buttons */}
@@ -76,20 +77,20 @@ export function Hero() {
                         variants={fadeUp}
                         className="flex flex-row gap-4 flex-wrap"
                     >
-                        <a
+                        {/* <a
                             href="#projects"
                             className="px-7 py-3.5 bg-[#C7EF66] text-[#0A0F1E] font-bold rounded-full inline-flex items-center gap-2 hover:opacity-90 transition text-sm"
                         >
                             View My Work
                             <ArrowRight size={16} />
-                        </a>
+                        </a> */}
                         <a
                             href="/cv.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-7 py-3.5 border-2 border-[#EFF0F4]/30 text-[#EFF0F4] font-bold rounded-full inline-flex items-center gap-2 hover:border-[#C7EF66] hover:text-[#C7EF66] transition text-sm"
                         >
-                            Download CV
+                            Download CV →
                         </a>
                     </motion.div>
 
