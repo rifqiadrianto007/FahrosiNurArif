@@ -7,8 +7,8 @@ const contactInfo = [
     {
         icon: Mail,
         label: "Email",
-        value: "yourname@email.com",
-        href: "mailto:yourname@email.com",
+        value: "fahrosinurr@gmail.com",
+        href: "mailto:fahrosinurr@gmail.com",
     },
     {
         icon: Phone,
@@ -28,13 +28,8 @@ const socialLinks = [
     {
         icon: Link,
         label: "LinkedIn",
-        href: "https://linkedin.com/in/yourprofile",
-    },
-    {
-        icon: GitBranch,
-        label: "GitHub",
-        href: "https://github.com/yourusername",
-    },
+        href: "https://www.linkedin.com/in/fahrosinur",
+    }
 ];
 
 const fadeUp: Variants = {
@@ -76,8 +71,8 @@ export function Contact() {
                     variants={fadeUp}
                     className="text-4xl md:text-6xl font-extrabold text-[#EFF0F4] leading-tight mb-6 max-w-2xl"
                 >
-                    Let&apos;s{" "}
-                    <span className="text-[#C7EF66]">Connect.</span>
+                    Let&apos;s Work Together and{" "}
+                    <span className="text-[#C7EF66]">Create Something Great!</span>
                 </motion.h2>
 
                 <motion.p
