@@ -40,7 +40,7 @@ export function Navbar() {
                         href="#"
                         className="font-mono font-bold text-xl text-[#C7EF66] tracking-tight hover:opacity-80 transition"
                     >
-                        FS
+                        FAHROSIARIF
                     </a>
 
                     {/* Desktop nav links */}
