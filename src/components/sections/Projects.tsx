@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, type Variants } from "framer-motion";
 import { projects, type Project } from "@/data/projects";
+import Image from "next/image";
 
 type FilterCategory = "All" | Project["category"];
 
@@ -88,8 +89,8 @@ export function Projects() {
                             key={cat}
                             onClick={() => setActiveFilter(cat)}
                             className={`px-4 py-2 rounded-full text-sm font-medium transition ${activeFilter === cat
-                                    ? "bg-[#C7EF66] text-[#0A0F1E]"
-                                    : "border border-[#EFF0F4]/20 text-[#EFF0F4]/60 hover:border-[#C7EF66]/40 hover:text-[#C7EF66]"
+                                ? "bg-[#C7EF66] text-[#0A0F1E]"
+                                : "border border-[#EFF0F4]/20 text-[#EFF0F4]/60 hover:border-[#C7EF66]/40 hover:text-[#C7EF66]"
                                 }`}
                         >
                             {cat}
@@ -110,10 +111,14 @@ export function Projects() {
                             className="group rounded-2xl border border-[#EFF0F4]/10 bg-[#11358B]/10 overflow-hidden hover:border-[#6192FC]/40 transition flex flex-col"
                         >
                             {/* Thumbnail */}
-                            <div className="w-full h-36 bg-[#11358B]/40 flex items-center justify-center border-b border-[#EFF0F4]/10">
-                                <span className="font-mono text-xs text-[#EFF0F4]/20 tracking-widest">
-                                    {project.category.toUpperCase()}
-                                </span>
+                            <div className="relative w-full aspect-video bg-[#11358B]/40 overflow-hidden border-b border-[#EFF0F4]/10">
+                                <Image
+                                    src={project.thumbnail}
+                                    alt={project.title}
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition duration-500"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                                />
                             </div>
 
                             {/* Content */}
