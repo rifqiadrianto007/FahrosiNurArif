@@ -65,17 +65,18 @@ export function About() {
                             Description
                         </p>
                         <h2 className="text-2xl md:text-3xl font-extrabold text-[#EFF0F4] leading-tight mb-5">
-                            Passionate about developing{" "}
-                            <span className="text-[#C7EF66]">sustainable energy</span>{" "}
-                            solutions that support efficiency, innovation, and a cleaner
-                            future.
+                            I am{" "}
+                            <span className="text-[#C7EF66]">Fahosi Nur Arif</span>{" "}
+                            a Renewable Energy Engineering
                         </h2>
-                        <p className="text-[#EFF0F4]/50 text-sm leading-relaxed">
-                            I am a Renewable Energy Engineering graduate from{" "}
-                            <span className="text-[#EFF0F4]/80">[University Name]</span>,
-                            focused on photovoltaic systems and energy modeling. I approach
-                            every project with a commitment to technical rigor and real-world
-                            impact.
+                        <p className="text-[#EFF0F4]/50 text-sm leading-relaxed justify-center">
+                            graduate from the state {" "}
+                            <span className="text-[#EFF0F4]/80">Polytechnic of Jember</span>,
+                            driven by a passion for advancing sustainable energy solutions. My experience
+                            spans hydrogen energy research, bioenergy systems, industrial energy analysis,
+                            and engineering project management, supported by hands-on industry experience
+                            and academic research. I strive to develop practical, data-driven solutions
+                            that accelerate the transition toward a cleaner, more sustainable energy future.
                         </p>
                     </motion.div>
 
