@@ -90,7 +90,8 @@ export function Hero() {
                             rel="noopener noreferrer"
                             className="px-7 py-3.5 border-2 border-[#EFF0F4]/30 text-[#EFF0F4] font-bold rounded-full inline-flex items-center gap-2 hover:border-[#C7EF66] hover:text-[#C7EF66] transition text-sm"
                         >
-                            Download CV →
+                            Download CV
+                            <ArrowRight size={16} />
                         </a>
                     </motion.div>
 
