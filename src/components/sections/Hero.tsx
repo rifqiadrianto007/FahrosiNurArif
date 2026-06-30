@@ -65,8 +65,7 @@ export function Hero() {
                         variants={fadeUp}
                         className="mt-6 mb-10 text-[#EFF0F4]/60 text-lg max-w-md leading-relaxed"
                     >
-                        Renewable Energy Engineer — focused on solar systems,
-                        energy modeling, and sustainable power solutions.
+                        Renewable Energy Engineer — passionate about industrial energy systems, process optimization, and sustainable energy development.
 
                     </motion.p>
 
@@ -105,8 +104,9 @@ export function Hero() {
                         className="mt-14 pt-8 border-t border-[#EFF0F4]/10 flex flex-row gap-12"
                     >
                         {[
-                            { value: "9+", label: "Projects" },
+                            { value: "8+", label: "Projects" },
                             { value: "5+", label: "Social Impact" },
+                            { value: "20+", label: "MC & Events" },
                             { value: "4 years", label: "Experience" },
                         ].map((stat) => (
                             <div key={stat.label} className="flex flex-col">

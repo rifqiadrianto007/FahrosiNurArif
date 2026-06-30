@@ -74,5 +74,14 @@ export const projects: Project[] = [
       "Designed and developed a digital avometer capable of measuring voltage and current using Arduino Uno, INA219, and voltage sensors.",
     tools: ["Arduino IDE", "C/C++", "Eletrical Circuit Design"],
     thumbnail: "/images/project.webp"
+  },
+  {
+    id: "8",
+    title: "Recycling Heat Pyrolyzer for Biomass Waste Conversion",
+    category: "Bioenergy",
+    description:
+      "Led the development of a heat-based pyrolysis system designed to improve thermal efficiency in converting coconut shell biomass into biochar.",
+    tools: ["AutoCAD", "Project Management", "Excel"],
+    thumbnail: "/images/project.webp"
   }
 ];

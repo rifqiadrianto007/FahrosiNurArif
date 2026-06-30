@@ -1,24 +1,23 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import Image from "next/image";
 
 const interests = [
-    "Solar PV System Design",
-    "Energy Simulation & Modeling",
-    "Rural Electrification",
-    "Hybrid Microgrid Systems",
-    "Energy Efficiency & Audit",
+    "Renewable Energy Systems",
+    "Industrial Process Engineering",
+    "Energy Data Analytics",
+    "Project Management",
+    "Sustainable Energy Development",
+    "Oil & Gas, Administrative"
 ];
 
 const tools = [
-    { name: "HOMER Pro", icon: "⚡" },
-    { name: "PVsyst", icon: "☀️" },
-    { name: "AutoCAD", icon: "📐" },
-    { name: "MATLAB", icon: "📊" },
-    { name: "Python", icon: "🐍" },
-    { name: "Excel", icon: "📋" },
-    { name: "Power BI", icon: "📈" },
-    { name: "ArcGIS", icon: "🗺️" },
+    { name: "QGIS3", icon: "/icons/capcut.svg" },
+    { name: "Arduino IDE", icon: "/icons/capcut.svg" },
+    { name: "MS. Office", icon: "/icons/office.svg" },
+    { name: "Canva", icon: "/icons/canva.svg" },
+    { name: "Capcut", icon: "/icons/capcut.svg" },
 ];
 
 const fadeUp: Variants = {
@@ -130,7 +129,13 @@ export function About() {
                                     key={tool.name}
                                     className="flex flex-col items-center gap-2 p-3 rounded-xl border border-[#EFF0F4]/10 bg-[#11358B]/10 hover:border-[#C7EF66]/30 hover:bg-[#11358B]/20 transition"
                                 >
-                                    <span className="text-xl">{tool.icon}</span>
+                                    <Image
+                                        src={tool.icon}
+                                        alt={tool.name}
+                                        width={24}
+                                        height={24}
+                                        className="w-6 h-6"
+                                    />
                                     <span className="text-[#EFF0F4]/60 text-xs font-mono text-center leading-tight">
                                         {tool.name}
                                     </span>

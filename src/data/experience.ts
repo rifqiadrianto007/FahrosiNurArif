@@ -39,7 +39,7 @@ export const experiences: Experience[] = [
     role: "Event Coordinator, Master of Ceremony & Talent",
     organization: "APLIKASI Event – LUMUT Student Activity Unit",
     period: "May 2024 – Jun 2024",
-    type: "Research",
+    type: "Organization",
     achievements: [
       "Successfully coordinated an orientation event attended by 100+ participants, ensuring smooth execution from preparation through completion.",
       "Demonstrated leadership by managing three strategic roles simultaneously while maintaining event quality and participant satisfaction",
