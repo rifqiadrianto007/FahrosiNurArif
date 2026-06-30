@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { ArrowRight, Zap } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 const fadeUp: Variants = {
     hidden: { opacity: 0, y: 24 },
@@ -120,7 +121,7 @@ export function Hero() {
                     </motion.div>
                 </div>
 
-                {/* RIGHT COLUMN — card stack */}
+                {/* RIGHT COLUMN — card stack with profile photo */}
                 <motion.div
                     initial="hidden"
                     animate="visible"
@@ -130,44 +131,20 @@ export function Hero() {
                     {/* Glow behind cards */}
                     <div className="absolute w-72 h-72 rounded-full bg-[#6192FC]/20 blur-3xl" />
 
-                    <div className="relative w-80 h-96">
+                    <div className="relative h-120 w-100">
                         {/* Back card */}
                         <div className="absolute inset-0 rounded-3xl bg-[#6192FC]/20 border border-[#6192FC]/30 rotate-6 translate-x-4 translate-y-2" />
 
-                        {/* Front card */}
-                        <div className="absolute inset-0 rounded-3xl bg-[#0A0F1E]/70 border border-[#EFF0F4]/10 backdrop-blur-md flex flex-col justify-between p-7 z-10">
-                            {/* Top */}
-                            <div className="flex items-center gap-2">
-                                <Zap size={28} className="text-[#C7EF66]" />
-                                <span className="font-mono text-xs text-[#EFF0F4]/50 tracking-wide">
-                                    Energy Systems
-                                </span>
-                            </div>
-
-                            {/* Middle */}
-                            <div>
-                                <p className="text-4xl font-extrabold text-[#EFF0F4] leading-tight">
-                                    Solar PV
-                                </p>
-                                <p className="text-sm text-[#EFF0F4]/50 mt-2">
-                                    System Design
-                                </p>
-                            </div>
-
-                            {/* Bottom — progress bar */}
-                            <div>
-                                <div className="flex justify-between items-center mb-2">
-                                    <p className="text-xs text-[#EFF0F4]/40 font-mono">
-                                        Efficiency Rating
-                                    </p>
-                                    <p className="text-xs text-[#C7EF66] font-mono font-bold">
-                                        80%
-                                    </p>
-                                </div>
-                                <div className="w-full h-1.5 bg-[#EFF0F4]/10 rounded-full">
-                                    <div className="w-4/5 h-full bg-[#C7EF66] rounded-full" />
-                                </div>
-                            </div>
+                        {/* Front card — now holds the profile photo */}
+                        <div className="absolute inset-0 rounded-3xl bg-[#0A0F1E]/70 border border-[#EFF0F4]/10 backdrop-blur-md overflow-visible z-10">
+                            <Image
+                                src="/images/profile.webp"
+                                alt="Fahrosi Nur Arif"
+                                width={1280}
+                                height={1536}
+                                className="absolute left-1/2 -bottom-44 h-[205%] w-auto max-w-none -translate-x-1/2 object-contain drop-shadow-2xl"
+                                priority
+                            />
                         </div>
                     </div>
                 </motion.div>
