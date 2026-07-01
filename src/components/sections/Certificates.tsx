@@ -29,7 +29,7 @@ export function Certificates() {
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={fadeUp}
-                    className="inline-flex px-3 py-1 rounded-full border border-[#C7EF66]/40 text-[#C7EF66] text-xs font-mono tracking-widest mb-6"
+                    className="inline-flex px-3 py-1 rounded-full border border-[#CBF400]/40 text-[#CBF400] text-xs font-mono tracking-widest mb-6"
                 >
                     CERTIFICATIONS
                 </motion.span>
@@ -43,7 +43,7 @@ export function Certificates() {
                     className="text-4xl md:text-5xl font-extrabold text-[#EFF0F4] leading-tight mb-4 max-w-xl"
                 >
                     Credentials &{" "}
-                    <span className="text-[#C7EF66]">Certifications.</span>
+                    <span className="text-[#CBF400]">Certifications.</span>
                 </motion.h2>
 
                 <motion.p
@@ -68,7 +68,7 @@ export function Certificates() {
                             whileInView="visible"
                             viewport={{ once: true }}
                             variants={fadeUp}
-                            className="group relative rounded-2xl border border-[#EFF0F4]/10 bg-[#0A0F1E]/40 overflow-hidden hover:border-[#C7EF66]/30 transition"
+                            className="group relative rounded-2xl border border-[#EFF0F4]/10 bg-[#0A0F1E]/40 overflow-hidden hover:border-[#CBF400]/30 transition"
                         >
                             {/* Thumbnail area */}
                             <div className="relative w-full aspect-video bg-[#0A0F1E]/60 overflow-hidden border-b border-[#EFF0F4]/10">
@@ -98,7 +98,7 @@ export function Certificates() {
                                         href={cert.credentialUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1.5 text-xs text-[#EFF0F4]/40 hover:text-[#C7EF66] transition"
+                                        className="inline-flex items-center gap-1.5 text-xs text-[#EFF0F4]/40 hover:text-[#CBF400] transition"
                                     >
                                         <ExternalLink size={12} />
                                         View Credential

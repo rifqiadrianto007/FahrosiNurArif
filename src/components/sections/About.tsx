@@ -65,7 +65,7 @@ export function About() {
                         </p>
                         <h2 className="text-2xl md:text-3xl font-extrabold text-[#EFF0F4] leading-tight mb-5">
                             I am{" "}
-                            <span className="text-[#C7EF66]">Fahosi Nur Arif</span>{" "}
+                            <span className="text-[#CBF400]">Fahosi Nur Arif</span>{" "}
                             a Renewable Energy Engineering
                         </h2>
                         <p className="text-[#EFF0F4]/50 text-sm leading-relaxed justify-center">
@@ -97,7 +97,7 @@ export function About() {
                         <ol className="flex flex-col gap-4">
                             {interests.map((item, index) => (
                                 <li key={item} className="flex items-start gap-3">
-                                    <span className="text-xs font-mono text-[#C7EF66] mt-0.5 shrink-0">
+                                    <span className="text-xs font-mono text-[#CBF400] mt-0.5 shrink-0">
                                         {String(index + 1).padStart(2, "0")}.
                                     </span>
                                     <span className="text-[#EFF0F4]/70 text-sm leading-relaxed">
@@ -127,7 +127,7 @@ export function About() {
                             {tools.map((tool) => (
                                 <div
                                     key={tool.name}
-                                    className="flex flex-col items-center gap-2 p-3 rounded-xl border border-[#EFF0F4]/10 bg-[#11358B]/10 hover:border-[#C7EF66]/30 hover:bg-[#11358B]/20 transition"
+                                    className="flex flex-col items-center gap-2 p-3 rounded-xl border border-[#EFF0F4]/10 bg-[#11358B]/10 hover:border-[#CBF400]/30 hover:bg-[#11358B]/20 transition"
                                 >
                                     <Image
                                         src={tool.icon}

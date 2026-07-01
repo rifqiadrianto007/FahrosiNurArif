@@ -4,10 +4,10 @@ import { motion, type Variants } from "framer-motion";
 import { experiences } from "@/data/experience";
 
 const typeColors: Record<string, string> = {
-    Internship: "text-[#C7EF66] border-[#C7EF66]/30 bg-[#C7EF66]/10",
+    Internship: "text-[#CBF400] border-[#CBF400]/30 bg-[#CBF400]/10",
     Organization: "text-[#6192FC] border-[#6192FC]/30 bg-[#6192FC]/10",
     Research: "text-[#EFF0F4] border-[#EFF0F4]/20 bg-[#EFF0F4]/5",
-    Community: "text-[#C7EF66] border-[#C7EF66]/30 bg-[#C7EF66]/10",
+    Community: "text-[#CBF400] border-[#CBF400]/30 bg-[#CBF400]/10",
 };
 
 const fadeUp: Variants = {
@@ -36,7 +36,7 @@ export function Experience() {
                     whileInView="visible"
                     viewport={{ once: true }}
                     variants={fadeUp}
-                    className="inline-flex px-3 py-1 rounded-full border border-[#C7EF66]/40 text-[#C7EF66] text-xs font-mono tracking-widest mb-6"
+                    className="inline-flex px-3 py-1 rounded-full border border-[#CBF400]/40 text-[#CBF400] text-xs font-mono tracking-widest mb-6"
                 >
                     EXPERIENCE
                 </motion.span>
@@ -50,7 +50,7 @@ export function Experience() {
                     className="text-4xl md:text-5xl font-extrabold text-[#EFF0F4] leading-tight mb-4 max-w-xl"
                 >
                     Where I&apos;ve{" "}
-                    <span className="text-[#C7EF66]">made an impact.</span>
+                    <span className="text-[#CBF400]">made an impact.</span>
                 </motion.h2>
 
                 <motion.p
@@ -82,7 +82,7 @@ export function Experience() {
                                 className="relative pl-8 md:pl-24"
                             >
                                 {/* Timeline dot */}
-                                <div className="absolute left-1 md:left-7 top-1.5 w-2.5 h-2.5 rounded-full bg-[#C7EF66] ring-4 ring-[#11358B]" />
+                                <div className="absolute left-1 md:left-7 top-1.5 w-2.5 h-2.5 rounded-full bg-[#CBF400] ring-4 ring-[#11358B]" />
 
                                 {/* Period — desktop: left of line */}
                                 <p className="hidden md:block absolute left-30 top-0.5 text-xs font-mono text-[#EFF0F4]/30 text-right w-28 leading-relaxed">
@@ -119,7 +119,7 @@ export function Experience() {
                                                 key={i}
                                                 className="flex gap-3 text-sm text-[#EFF0F4]/60 leading-relaxed"
                                             >
-                                                <span className="text-[#C7EF66] mt-1 shrink-0">→</span>
+                                                <span className="text-[#CBF400] mt-1 shrink-0">→</span>
                                                 {item}
                                             </li>
                                         ))}

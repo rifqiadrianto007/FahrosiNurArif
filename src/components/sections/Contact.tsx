@@ -72,7 +72,7 @@ export function Contact() {
                     className="text-4xl md:text-6xl font-extrabold text-[#EFF0F4] leading-tight mb-6 max-w-2xl"
                 >
                     Let&apos;s Work Together and{" "}
-                    <span className="text-[#C7EF66]">Create Something Great!</span>
+                    <span className="text-[#CBF400]">Create Something Great!</span>
                 </motion.h2>
 
                 <motion.p
@@ -104,9 +104,9 @@ export function Contact() {
                         {contactInfo.map((item) => {
                             const Icon = item.icon;
                             const content = (
-                                <div className="flex items-center gap-4 p-4 rounded-2xl border border-[#EFF0F4]/10 bg-[#11358B]/10 hover:border-[#C7EF66]/30 hover:bg-[#11358B]/20 transition group">
-                                    <div className="w-10 h-10 rounded-full bg-[#C7EF66]/10 border border-[#C7EF66]/20 flex items-center justify-center shrink-0 group-hover:bg-[#C7EF66]/20 transition">
-                                        <Icon size={18} className="text-[#C7EF66]" />
+                                <div className="flex items-center gap-4 p-4 rounded-2xl border border-[#EFF0F4]/10 bg-[#11358B]/10 hover:border-[#CBF400]/30 hover:bg-[#11358B]/20 transition group">
+                                    <div className="w-10 h-10 rounded-full bg-[#CBF400]/10 border border-[#CBF400]/20 flex items-center justify-center shrink-0 group-hover:bg-[#CBF400]/20 transition">
+                                        <Icon size={18} className="text-[#CBF400]" />
                                     </div>
                                     <div>
                                         <p className="text-xs font-mono text-[#EFF0F4]/30 mb-0.5">
@@ -151,7 +151,7 @@ export function Contact() {
                                 href={link.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#EFF0F4]/20 text-[#EFF0F4]/60 text-sm font-medium hover:border-[#C7EF66]/40 hover:text-[#C7EF66] transition"
+                                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#EFF0F4]/20 text-[#EFF0F4]/60 text-sm font-medium hover:border-[#CBF400]/40 hover:text-[#CBF400] transition"
                             >
                                 <Icon size={16} />
                                 {link.label}

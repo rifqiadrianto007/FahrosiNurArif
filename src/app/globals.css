@@ -4,7 +4,7 @@
 
 :root {
   --color-primary: #11358B;
-  --color-accent: #C7EF66;
+  --color-accent: #CBF400;
   --color-mid: #6192FC;
   --color-surface: #EFF0F4;
   --color-dark: #0A0F1E;
@@ -24,7 +24,7 @@ body {
 }
 
 .accent-text {
-  color: #C7EF66;
+  color: #CBF400;
 }
 
 .section-padding {

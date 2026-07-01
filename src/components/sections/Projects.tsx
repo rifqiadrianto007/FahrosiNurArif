@@ -60,7 +60,7 @@ export function Projects() {
                     className="text-4xl md:text-5xl font-extrabold text-[#EFF0F4] leading-tight mb-4 max-w-xl"
                 >
                     Building Sustainable{" "}
-                    <span className="text-[#C7EF66]">Energy Solutions.</span>
+                    <span className="text-[#CBF400]">Energy Solutions.</span>
                 </motion.h2>
 
                 <motion.p
@@ -89,8 +89,8 @@ export function Projects() {
                             key={cat}
                             onClick={() => setActiveFilter(cat)}
                             className={`px-4 py-2 rounded-full text-sm font-medium transition ${activeFilter === cat
-                                ? "bg-[#C7EF66] text-[#0A0F1E]"
-                                : "border border-[#EFF0F4]/20 text-[#EFF0F4]/60 hover:border-[#C7EF66]/40 hover:text-[#C7EF66]"
+                                ? "bg-[#CBF400] text-[#0A0F1E]"
+                                : "border border-[#EFF0F4]/20 text-[#EFF0F4]/60 hover:border-[#CBF400]/40 hover:text-[#CBF400]"
                                 }`}
                         >
                             {cat}

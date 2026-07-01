@@ -38,7 +38,7 @@ export function Navbar() {
                     {/* Logo */}
                     <a
                         href="#"
-                        className="font-mono font-bold text-xl text-[#C7EF66] tracking-tight hover:opacity-80 transition"
+                        className="font-mono font-bold text-xl text-[#CBF400] tracking-tight hover:opacity-80 transition"
                     >
                         FAHROSIARIF
                     </a>
@@ -59,7 +59,7 @@ export function Navbar() {
                     {/* Desktop CTA */}
                     <a
                         href="#contact"
-                        className="hidden md:inline-flex items-center gap-2 px-5 py-2 bg-[#C7EF66] text-[#0A0F1E] font-bold text-sm rounded-full hover:opacity-90 transition"
+                        className="hidden md:inline-flex items-center gap-2 px-5 py-2 bg-[#CBF400] text-[#0A0F1E] font-bold text-sm rounded-full hover:opacity-90 transition"
                     >
                         Let&apos;s Talk
                     </a>
@@ -83,7 +83,7 @@ export function Navbar() {
                             key={link.href}
                             href={link.href}
                             onClick={() => setMenuOpen(false)}
-                            className="text-2xl font-bold text-[#EFF0F4] hover:text-[#C7EF66] transition"
+                            className="text-2xl font-bold text-[#EFF0F4] hover:text-[#CBF400] transition"
                         >
                             {link.label}
                         </a>
@@ -91,7 +91,7 @@ export function Navbar() {
                     <a
                         href="#contact"
                         onClick={() => setMenuOpen(false)}
-                        className="mt-4 px-8 py-3 bg-[#C7EF66] text-[#0A0F1E] font-bold rounded-full hover:opacity-90 transition"
+                        className="mt-4 px-8 py-3 bg-[#CBF400] text-[#0A0F1E] font-bold rounded-full hover:opacity-90 transition"
                     >
                         Let&apos;s Talk
                     </a>

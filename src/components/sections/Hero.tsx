@@ -53,8 +53,8 @@ export function Hero() {
                         variants={fadeUp}
                         className="font-extrabold text-4xl md:text-5xl lg:text-6xl leading-[1.05] text-[#EFF0F4] max-w-xl"
                     >
-                        Building <span className="text-[#C7EF66]">Sustainable </span>
-                        <span className="text-[#C7EF66]">Energy</span> Solutions.
+                        Building <span className="text-[#CBF400]">Sustainable </span>
+                        <span className="text-[#CBF400]">Energy</span> Solutions.
                     </motion.h1>
 
                     {/* Subtitle */}
@@ -79,7 +79,7 @@ export function Hero() {
                     >
                         {/* <a
                             href="#projects"
-                            className="px-7 py-3.5 bg-[#C7EF66] text-[#0A0F1E] font-bold rounded-full inline-flex items-center gap-2 hover:opacity-90 transition text-sm"
+                            className="px-7 py-3.5 bg-[#CBF400] text-[#0A0F1E] font-bold rounded-full inline-flex items-center gap-2 hover:opacity-90 transition text-sm"
                         >
                             View My Work
                             <ArrowRight size={16} />
@@ -88,7 +88,7 @@ export function Hero() {
                             href="/cv.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-7 py-3.5 border-2 border-[#EFF0F4]/30 text-[#EFF0F4] font-bold rounded-full inline-flex items-center gap-2 hover:border-[#C7EF66] hover:text-[#C7EF66] transition text-sm"
+                            className="px-7 py-3.5 border-2 border-[#EFF0F4]/30 text-[#EFF0F4] font-bold rounded-full inline-flex items-center gap-2 hover:border-[#CBF400] hover:text-[#CBF400] transition text-sm"
                         >
                             Download CV
                             <ArrowRight size={16} />
