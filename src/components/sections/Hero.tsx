@@ -138,7 +138,7 @@ export function Hero() {
                         {/* Front card — now holds the profile photo */}
                         <div className="absolute inset-0 rounded-3xl bg-[#0A0F1E]/70 border border-[#EFF0F4]/10 backdrop-blur-md overflow-visible z-10">
                             <Image
-                                src="/images/profile.webp"
+                                src="/images/Profile.webp"
                                 alt="Fahrosi Nur Arif"
                                 width={1280}
                                 height={1536}
