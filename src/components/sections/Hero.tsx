@@ -142,7 +142,7 @@ export function Hero() {
                                 alt="Fahrosi Nur Arif"
                                 width={1280}
                                 height={1536}
-                                className="absolute left-1/2 -bottom-44 h-[205%] w-auto max-w-none -translate-x-1/2 object-contain drop-shadow-2xl"
+                                className="absolute left-1/2 -bottom-25 h-[150%] w-auto max-w-none -translate-x-1/2 object-contain drop-shadow-2xl"
                                 priority
                             />
                         </div>
