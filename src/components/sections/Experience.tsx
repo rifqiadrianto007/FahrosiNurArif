@@ -69,7 +69,6 @@ export function Experience() {
                 <div className="relative">
                     {/* Vertical line */}
                     <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-[#EFF0F4]/10" />
-
                     <div className="flex flex-col gap-12">
                         {experiences.map((exp, index) => (
                             <motion.div
@@ -79,51 +78,50 @@ export function Experience() {
                                 whileInView="visible"
                                 viewport={{ once: true }}
                                 variants={fadeUp}
-                                className="relative pl-8 md:pl-24"
+                                className="relative pl-8 md:pl-0"
                             >
                                 {/* Timeline dot */}
                                 <div className="absolute left-1 md:left-7 top-1.5 w-2.5 h-2.5 rounded-full bg-[#CBF400] ring-4 ring-[#11358B]" />
 
-                                {/* Period — desktop: left of line */}
-                                <p className="hidden md:block absolute left-30 top-0.5 text-xs font-mono text-[#EFF0F4]/30 text-right w-28 leading-relaxed">
-                                    {exp.period}
-                                </p>
-
-                                {/* Card */}
-                                <div className="rounded-2xl border border-[#EFF0F4]/10 bg-[#0A0F1E]/40 p-6 hover:border-[#6192FC]/30 transition">
-                                    {/* Header */}
-                                    <div className="flex flex-wrap items-start gap-3 mb-1">
-                                        <h3 className="text-lg font-bold text-[#EFF0F4] leading-snug">
-                                            {exp.role}
-                                        </h3>
-                                        <span
-                                            className={`inline-flex px-2 py-0.5 rounded-full border text-xs font-mono ${typeColors[exp.type]}`}
-                                        >
-                                            {exp.type}
-                                        </span>
-                                    </div>
-
-                                    <p className="text-[#6192FC] text-sm font-medium mb-1">
-                                        {exp.organization}
-                                    </p>
-
-                                    {/* Period — mobile */}
-                                    <p className="md:hidden text-xs font-mono text-[#EFF0F4]/30 mb-4">
+                                <div className="md:flex md:items-start md:gap-6 md:pl-16">
+                                    {/* Period — desktop, sekarang bagian dari flex, bukan absolute */}
+                                    <p className="hidden md:block shrink-0 w-24 pt-1 text-xs font-mono text-[#EFF0F4]/30 leading-relaxed">
                                         {exp.period}
                                     </p>
 
-                                    {/* Achievements */}
-                                    <ul className="mt-4 flex flex-col gap-2">
-                                        {exp.achievements.map((item, i) => (
-                                            <li
-                                                key={i}
-                                                className="flex gap-3 text-sm text-[#EFF0F4]/60 leading-relaxed"
+                                    {/* Card */}
+                                    <div className="flex-1 rounded-2xl border border-[#EFF0F4]/10 bg-[#0A0F1E]/40 p-6 hover:border-[#6192FC]/30 transition">
+                                        {/* Header */}
+                                        <div className="flex flex-wrap items-start gap-3 mb-1">
+                                            <h3 className="text-lg font-bold text-[#EFF0F4] leading-snug">
+                                                {exp.role}
+                                            </h3>
+                                            <span
+                                                className={`inline-flex px-2 py-0.5 rounded-full border text-xs font-mono ${typeColors[exp.type]}`}
                                             >
-                                                <span className="text-[#CBF400] mt-1 shrink-0">→</span>
-                                                {item}
-                                            </li>
-                                        ))}
-                                    </ul>
+                                                {exp.type}
+                                            </span>
+                                        </div>
+                                        <p className="text-[#6192FC] text-sm font-medium mb-1">
+                                            {exp.organization}
+                                        </p>
+                                        {/* Period — mobile */}
+                                        <p className="md:hidden text-xs font-mono text-[#EFF0F4]/30 mb-4">
+                                            {exp.period}
+                                        </p>
+                                        {/* Achievements */}
+                                        <ul className="mt-4 flex flex-col gap-2">
+                                            {exp.achievements.map((item, i) => (
+                                                <li
+                                                    key={i}
+                                                    className="flex gap-3 text-sm text-[#EFF0F4]/60 leading-relaxed"
+                                                >
+                                                    <span className="text-[#CBF400] mt-1 shrink-0">→</span>
+                                                    {item}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
                                 </div>
                             </motion.div>
                         ))}
