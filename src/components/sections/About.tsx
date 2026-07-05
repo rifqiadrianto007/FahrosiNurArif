@@ -14,11 +14,11 @@ const interests = [
 ];
 
 const tools = [
-    { name: "QGIS3", icon: "/icons/capcut.svg" },
-    { name: "Arduino IDE", icon: "/icons/capcut.svg" },
-    { name: "MS. Office", icon: "/icons/office.svg" },
-    { name: "Canva", icon: "/icons/canva.svg" },
-    { name: "Capcut", icon: "/icons/capcut.svg" },
+    { name: "QGIS3", icon: "/icons/QGIS3.svg" },
+    { name: "Arduino IDE", icon: "/icons/Arduino.svg" },
+    { name: "MS. Office", icon: "/icons/Office.svg" },
+    { name: "Canva", icon: "/icons/Canva.svg" },
+    { name: "Capcut", icon: "/icons/Capcut.svg" },
 ];
 
 const fadeUp: Variants = {
