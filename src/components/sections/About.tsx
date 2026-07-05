@@ -9,7 +9,8 @@ const interests = [
     "Energy Data Analytics",
     "Project Management",
     "Sustainable Energy Development",
-    "Oil & Gas, Administrative"
+    "Oil & Gas",
+    "Administrative"
 ];
 
 const tools = [
