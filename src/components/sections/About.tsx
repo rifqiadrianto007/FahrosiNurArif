@@ -138,9 +138,9 @@ export function About() {
                                     <Image
                                         src={tool.icon}
                                         alt={tool.name}
-                                        width={40}
-                                        height={40}
-                                        className="w-10 h-10 opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                                        width={80}
+                                        height={80}
+                                        className="w-20 h-20 opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                                     />
                                     {/* Tooltip nama, muncul saat hover — pengganti label yang tadinya permanen di card */}
                                     <span className="pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] font-mono text-[#EFF0F4]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
