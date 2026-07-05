@@ -124,23 +124,29 @@ export function About() {
                         <p className="text-xs font-mono text-[#6192FC] tracking-widest uppercase mb-5">
                             Tools
                         </p>
-                        <div className="grid grid-cols-3 gap-3">
-                            {tools.map((tool) => (
-                                <div
+                        <div className="flex flex-wrap gap-6">
+                            {tools.map((tool, i) => (
+                                <motion.div
                                     key={tool.name}
-                                    className="flex flex-col items-center gap-2 p-3 rounded-xl border border-[#EFF0F4]/10 bg-[#11358B]/10 hover:border-[#CBF400]/30 hover:bg-[#11358B]/20 transition"
+                                    initial={{ opacity: 0, y: 12 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.4, delay: 0.05 * i }}
+                                    whileHover={{ scale: 1.15, y: -4 }}
+                                    className="group relative"
                                 >
                                     <Image
                                         src={tool.icon}
                                         alt={tool.name}
-                                        width={24}
-                                        height={24}
-                                        className="w-6 h-6"
+                                        width={40}
+                                        height={40}
+                                        className="w-10 h-10 opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                                     />
-                                    <span className="text-[#EFF0F4]/60 text-xs font-mono text-center leading-tight">
+                                    {/* Tooltip nama, muncul saat hover — pengganti label yang tadinya permanen di card */}
+                                    <span className="pointer-events-none absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] font-mono text-[#EFF0F4]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         {tool.name}
                                     </span>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </motion.div>
