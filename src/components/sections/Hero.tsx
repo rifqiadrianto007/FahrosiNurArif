@@ -85,7 +85,7 @@ export function Hero() {
                             <ArrowRight size={16} />
                         </a> */}
                         <a
-                            href="/cv.pdf"
+                            href="https://drive.google.com/file/d/1k-wcTf9QsTOdWfpw87QbxvVf08Mpc6ZO/view?usp=sharing"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-7 py-3.5 border-2 border-[#EFF0F4]/30 text-[#EFF0F4] font-bold rounded-full inline-flex items-center gap-2 hover:border-[#CBF400] hover:text-[#CBF400] transition text-sm"
