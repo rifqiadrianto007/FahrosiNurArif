@@ -92,18 +92,6 @@ export function Certificates() {
                                 <p className="text-xs text-[#EFF0F4]/30 font-mono mb-3">
                                     {cert.date}
                                 </p>
-
-                                {cert.credentialUrl && (
-                                    <a
-                                        href={cert.credentialUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1.5 text-xs text-[#EFF0F4]/40 hover:text-[#CBF400] transition"
-                                    >
-                                        <ExternalLink size={12} />
-                                        View Credential
-                                    </a>
-                                )}
                             </div>
                         </motion.div>
                     ))}

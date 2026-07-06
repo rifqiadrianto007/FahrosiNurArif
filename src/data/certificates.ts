@@ -15,7 +15,6 @@ export const certificates: Certificate[] = [
     title: "Awareness Training Environmental Management System (ISO 14001:2015)",
     issuer: "MAKIN AHLI",
     date: "Jan 2025",
-    credentialUrl: "#",
     thumbnail: "/images/Certificates/certif1.webp",
   },
   {
@@ -23,7 +22,6 @@ export const certificates: Certificate[] = [
     title: "Awareness Training Occupational Health and Safety Management System (PP No 50:2012)",
     issuer: "MAKIN AHLI",
     date: "Jan 2025",
-    credentialUrl: "#",
     thumbnail: "/images/Certificates/certif2.webp",
   },
   {
@@ -31,7 +29,6 @@ export const certificates: Certificate[] = [
     title: "Awareness Training Occupational Health and Safety Management System (ISO 45001:2018)",
     issuer: "MAKIN AHLI",
     date: "Jan 2025",
-    credentialUrl: "#",
     thumbnail: "/images/Certificates/certif3.webp",
   },
   {
@@ -39,7 +36,6 @@ export const certificates: Certificate[] = [
     title: "STIC Essay 2022 Competition",
     issuer: "Polytechnic of Jember",
     date: "Jul 2024",
-    credentialUrl: "#",
     thumbnail: "/images/Certificates/certif4.webp",
   },
   {
@@ -47,7 +43,6 @@ export const certificates: Certificate[] = [
     title: "Student Creativity Program: (PKM) Scientific Articles (AI) and Written Ideas (GT)",
     issuer: "Ministry of Education, Culture, Research, and Technology",
     date: "Nov 2024",
-    credentialUrl: "#",
     thumbnail: "/images/Certificates/certif5.webp",
   }
 ];
