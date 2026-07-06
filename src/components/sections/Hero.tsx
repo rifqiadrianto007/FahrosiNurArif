@@ -3,6 +3,7 @@
 import { motion, type Variants } from "framer-motion";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const fadeUp: Variants = {
     hidden: { opacity: 0, y: 24 },
@@ -21,6 +22,47 @@ const fadeRight: Variants = {
         transition: { duration: 0.7, delay: 0.35, ease: "easeOut" },
     },
 };
+
+function AnimatedStatValue({
+    target,
+    suffix = "",
+    unit = "",
+}: {
+    target: number;
+    suffix?: string;
+    unit?: string;
+}) {
+    const [displayValue, setDisplayValue] = useState(0);
+
+    useEffect(() => {
+        let frameId = 0;
+        let startTime: number | null = null;
+
+        const animate = (timestamp: number) => {
+            if (startTime === null) startTime = timestamp;
+
+            const progress = Math.min((timestamp - startTime) / 1200, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            setDisplayValue(Math.round(target * eased));
+
+            if (progress < 1) {
+                frameId = window.requestAnimationFrame(animate);
+            }
+        };
+
+        frameId = window.requestAnimationFrame(animate);
+
+        return () => window.cancelAnimationFrame(frameId);
+    }, [target]);
+
+    return (
+        <span className="text-2xl font-bold text-[#EFF0F4]">
+            {displayValue}
+            {suffix}
+            {unit}
+        </span>
+    );
+}
 
 export function Hero() {
     return (
@@ -104,15 +146,17 @@ export function Hero() {
                         className="mt-14 pt-8 border-t border-[#EFF0F4]/10 flex flex-row gap-12"
                     >
                         {[
-                            { value: "8+", label: "Projects" },
-                            { value: "5+", label: "Social Impact" },
-                            { value: "20+", label: "MC & Events" },
-                            { value: "4 years", label: "Experience" },
+                            { value: 8, suffix: "+", label: "Projects" },
+                            { value: 5, suffix: "+", label: "Social Impact" },
+                            { value: 20, suffix: "+", label: "MC & Events" },
+                            { value: 4, unit: " years", label: "Experience" },
                         ].map((stat) => (
                             <div key={stat.label} className="flex flex-col">
-                                <span className="text-2xl font-bold text-[#EFF0F4]">
-                                    {stat.value}
-                                </span>
+                                <AnimatedStatValue
+                                    target={stat.value}
+                                    suffix={stat.suffix}
+                                    unit={stat.unit}
+                                />
                                 <span className="text-xs text-[#EFF0F4]/50 font-mono mt-1 tracking-wide">
                                     {stat.label}
                                 </span>
