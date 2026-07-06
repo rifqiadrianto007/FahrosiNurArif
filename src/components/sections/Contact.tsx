@@ -9,19 +9,21 @@ const contactInfo = [
         label: "Email",
         value: "fahrosinurr@gmail.com",
         href: "mailto:fahrosinurr@gmail.com",
+        target: "_blank",
     },
     {
         icon: Phone,
         label: "Phone",
-        value: "+62 8xx-xxxx-xxxx",
-        href: "tel:+628xxxxxxxxx",
+        value: "+62 895-2256-2576",
+        href: "https://wa.me/6289522562576",
+        target: "_blank",
     },
     {
         icon: MapPin,
         label: "Location",
         value: "Indonesia",
         href: null,
-    },
+    }
 ];
 
 const socialLinks = [
@@ -29,6 +31,7 @@ const socialLinks = [
         icon: Link,
         label: "LinkedIn",
         href: "https://www.linkedin.com/in/fahrosinur",
+        target: "_blank",
     }
 ];
 
