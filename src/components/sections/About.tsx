@@ -17,8 +17,7 @@ const tools = [
     { name: "QGIS3", icon: "/icons/QGIS3.svg" },
     { name: "Arduino IDE", icon: "/icons/Arduino.svg" },
     { name: "MS. Office", icon: "/icons/Office.svg" },
-    { name: "Canva", icon: "/icons/Canva.svg" },
-    { name: "Capcut", icon: "/icons/Capcut.svg" },
+    { name: "AutoCAD", icon: "/icons/AutoCAD.svg" }
 ];
 
 const fadeUp: Variants = {
