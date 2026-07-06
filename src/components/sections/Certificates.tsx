@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { ExternalLink } from "lucide-react";
 import { certificates } from "@/data/certificates";
 import Image from "next/image";
 
