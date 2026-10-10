@@ -11,13 +11,13 @@ const contactInfo = [
         href: "mailto:fahrosinurr@gmail.com",
         target: "_blank",
     },
-    {
-        icon: Phone,
-        label: "Phone",
-        value: "+62 895-2256-2576",
-        href: "https://wa.me/6289522562576",
-        target: "_blank",
-    },
+    // {
+    //     icon: Phone,
+    //     label: "Phone",
+    //     value: "+62 895-2256-2576",
+    //     href: "https://wa.me/6289522562576",
+    //     target: "_blank",
+    // },
     {
         icon: MapPin,
         label: "Location",
